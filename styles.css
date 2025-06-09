@@ -14,11 +14,9 @@ header {
     background-color: #ffffff;
 }
 
-
 section {
     padding-bottom: 5rem;
 }
-
 
 .nav-link {
     color: #CB6D43;
@@ -26,9 +24,7 @@ section {
 }
 
 .inicio-fundo {
-    /* aula 3 */
     background-image: url('img/4965007.png');
-    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -38,7 +34,6 @@ section {
     margin: 0 auto;
 }
 
-/* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
     right: 0;
@@ -47,14 +42,12 @@ section {
     height: auto;
 }
 
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
 }
-
 
 .botao-inicio {
     background-color: var(--laranja-claro);
@@ -63,13 +56,11 @@ section {
     width: 14em;
     height: 3em;
     align-content: center;
-
 }
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
 }
-
 
 #tropicalia {
     position: relative;
@@ -77,9 +68,8 @@ section {
     margin-top: 3rem;
     margin-bottom: 3rem;
     background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
+                url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
 }
 
 #tropicalia .container {
@@ -88,9 +78,7 @@ section {
     justify-content: center;
     position: relative;
     z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
 }
-
 
 h2 {
     font-family: 'Lemon', serif;
@@ -101,7 +89,7 @@ h2 {
 
 #galeria {
     background-color: #FAF4F4;
-
+    padding: 3rem 2rem;
 }
 
 .fundo-galeria {
@@ -113,18 +101,13 @@ h2 {
     background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
 }
 
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
@@ -137,3 +120,35 @@ h2 {
 .form-control {
     background-color: #F1EDEF;
 }
+
+/* Estilos para as imagens na galeria */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#galeria img {
+    width: 100%;
+    max-width: 300px; /* Tamanho máximo das imagens */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Faz com que as imagens cubram completamente o espaço */
+    border-radius: 10px; /* Bordas arredondadas, se desejar */
+}
+
+/* Caso a galeria tenha um container específico para as imagens */
+#galeria .imagem-item {
+    width: 100%; /* Faz com que o item ocupe toda a largura do container */
+    max-width: 300px; /* Controla a largura máxima das imagens */
+    height: 200px; /* Controla a altura das imagens */
+    object-fit: cover;
+    margin: 10px; /* Espaço entre as imagens */
+}
+
+/* Adiciona uma borda e sombra se necessário */
+#galeria .imagem-item img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
